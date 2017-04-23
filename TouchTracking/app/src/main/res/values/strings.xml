@@ -1,0 +1,38 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">TouchTracker</string>
+
+    <!-- Lable -->
+    <string name="emptyLable"> </string>
+
+    <!-- Splash Screen-->
+    <string name="splashScreen">Touch Tracker</string>
+    <string name="creator">Simon Schrei</string>
+
+    <!-- Buttons -->
+    <string name="btn_statistic">Statistic</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_allTouches">All Touches</string>
+    <string name="btn_start">Start</string>
+
+    <!-- Header -->
+    <string name="header_statistic">Statistic</string>
+    <string name="header_allTouches">All Touches</string>
+    <string name="header_LastTouches">Last 5 Touches</string>
+
+    <!-- Table -->
+    <string name="lastTouch">Last Touch</string>
+    <string name="avgPerMin">Average per Min</string>
+    <string name="touchCounter">Touchcounter</string>
+
+    <!-- Default-->
+    <string name="table_default_name">Position</string>
+    <string name="table_default">0</string>
+
+    <!-- Additional Stuff -->
+    <string name="tab">\u0009</string>
+
+    <!-- Text Description-->
+    <string name="txt_description">Welcome to my Application! Touch the screen wherever you want and then check out the statistic to see where you touched the screen</string>
+</resources>
