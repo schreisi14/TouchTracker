@@ -2,12 +2,12 @@
     <!-- App Name -->
     <string name="app_name">TouchTracker</string>
 
-    <!-- Lable -->
-    <string name="emptyLable"> </string>
+    <!-- Label -->
+    <string name="emptyLabel"> </string>
 
     <!-- Splash Screen-->
     <string name="splashScreen">Touch Tracker</string>
-    <string name="creator">Simon Schrei</string>
+    <string name="creator">by Simon Schrei</string>
 
     <!-- Buttons -->
     <string name="btn_statistic">Statistic</string>

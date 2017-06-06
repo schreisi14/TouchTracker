@@ -92,11 +92,31 @@ public class StatisticActivity extends AppCompatActivity {
         txtView_lastTouch.setText("" + getLastTouch());
         txtView_avgPerMin.setText("" + getAvgTouches());
 
-        txtView_last5Touches1.setText("" + getMyTouches().get(sizeTouches-4).getPosistion());
-        txtView_last5Touches2.setText("" + getMyTouches().get(sizeTouches-3).getPosistion());
-        txtView_last5Touches3.setText("" + getMyTouches().get(sizeTouches-2).getPosistion());
-        txtView_last5Touches4.setText("" + getMyTouches().get(sizeTouches-1).getPosistion());
-        txtView_last5Touches5.setText("" + getMyTouches().get(sizeTouches).getPosistion());
+        if(getMyTouches().get(sizeTouches-4).getPosistion().isEmpty()){
+            txtView_last5Touches1.setText("" + 0);
+        }else{
+            txtView_last5Touches1.setText("" + getMyTouches().get(sizeTouches-4).getPosistion());
+        }
+        if(getMyTouches().get(sizeTouches-3).getPosistion().isEmpty()){
+            txtView_last5Touches2.setText("" + 0);
+        }else{
+            txtView_last5Touches2.setText("" + getMyTouches().get(sizeTouches-3).getPosistion());
+        }
+        if(getMyTouches().get(sizeTouches-2).getPosistion().isEmpty()){
+            txtView_last5Touches3.setText("" + 0);
+        }else{
+            txtView_last5Touches3.setText("" + getMyTouches().get(sizeTouches-2).getPosistion());
+        }
+        if(getMyTouches().get(sizeTouches-1).getPosistion().isEmpty()){
+            txtView_last5Touches4.setText("" + 0);
+        }else{
+            txtView_last5Touches4.setText("" + getMyTouches().get(sizeTouches-1).getPosistion());
+        }
+        if(getMyTouches().get(sizeTouches).getPosistion().isEmpty()){
+            txtView_last5Touches5.setText("" + 0);
+        }else{
+            txtView_last5Touches5.setText("" + getMyTouches().get(sizeTouches).getPosistion());
+        }
 
         txtView_allTouches.setText("");
         for (Touch touch : getMyTouches()) {

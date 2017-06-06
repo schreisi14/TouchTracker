@@ -1,7 +1,6 @@
 package schrei.project.touchtracking;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,7 +20,7 @@ public class TouchView extends View {
     private static int countTouches;
     private static long avgTouches;
     private static String lastTouch;
-    private long startmillis;
+    private long startMillis;
 
     // Constructor
     public TouchView(Context context, AttributeSet attrs) {
@@ -39,7 +38,7 @@ public class TouchView extends View {
 
                 // first touch time to calculate the avg
                 if (countTouches == 1) {
-                    startmillis = System.currentTimeMillis();
+                    startMillis = System.currentTimeMillis();
                 }
 
                 // time of touch
@@ -54,10 +53,10 @@ public class TouchView extends View {
                 countTouches++;
 
                 // Calculate the avg of touches per min
-                if(((milliseconds - startmillis) / 60000) <= 0) {
-                    avgTouches = countTouches;
+                if(((milliseconds - startMillis) / 60000) <= 0) {
+                    avgTouches = countTouches - 1;
                 }else{
-                    avgTouches = countTouches / ((milliseconds - startmillis) / 60000);
+                    avgTouches = (countTouches - 1) / ((milliseconds - startMillis) / 60000);
                 }
                 break;
             }
@@ -70,7 +69,7 @@ public class TouchView extends View {
         return myTouches;
     }
     public static int getCountTouches() {
-        return countTouches;
+        return countTouches-1;
     }
     public static long getAvgTouches() {
         return avgTouches;

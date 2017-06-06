@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#ffffff</color>
 
+    <!-- Text SplashScreen -->
     <color name="colorSplashScreen">#ffffff</color>
 </resources>
