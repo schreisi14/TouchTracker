@@ -29,7 +29,7 @@ Note: If you have troubles to start look at the Settings.md in the Documentation
 # Tutorials
 Tutorials I used to create my Application
 `
--> http://www.programmierenlernenhq.de/tutorial-android-studio-projekt-erstellen/
--> https://www.youtube.com/watch?v=ND6a4V-xdjI
--> https://developer.android.com/reference/android/view/MotionEvent.html
+- http://www.programmierenlernenhq.de/tutorial-android-studio-projekt-erstellen/
+- https://www.youtube.com/watch?v=ND6a4V-xdjI
+- https://developer.android.com/reference/android/view/MotionEvent.html
 `
